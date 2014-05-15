@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ASCII"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+ <display-name>baseInfo</display-name>
+ <servlet>
+  <display-name>mapServlet</display-name>
+  <servlet-name>mapServlet</servlet-name>
+  <servlet-class>baseInfo.mapServlet</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>map</display-name>
+  <servlet-name>map</servlet-name>
+  <servlet-class>baseInfo.map</servlet-class>
+ </servlet>
+ <servlet>
+  <display-name>mapControl</display-name>
+  <servlet-name>mapControl</servlet-name>
+  <servlet-class>baseInfo.mapControl</servlet-class>
+ </servlet>
+ <servlet-mapping>
+  <servlet-name>mapServlet</servlet-name>
+  <url-pattern>/mapServlet</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>map</servlet-name>
+  <url-pattern>/map</url-pattern>
+ </servlet-mapping>
+ <servlet-mapping>
+  <servlet-name>mapControl</servlet-name>
+  <url-pattern>/mapControl</url-pattern>
+ </servlet-mapping>
+ <login-config>
+  <auth-method>BASIC</auth-method>
+ </login-config>
+</web-app>
